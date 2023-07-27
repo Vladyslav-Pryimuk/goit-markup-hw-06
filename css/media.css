@@ -2,11 +2,15 @@
   .container {
     max-width: 426px;
   }
+
+  .footer-input {
+    width: 398px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 768px;
   }
 
   .advantages-item {
@@ -24,6 +28,23 @@
   .team {
     gap: 64px 24px;
   }
+
+  .customers-item {
+    width: 168px;
+    height: 88px;
+  }
+
+  .footer-main-container {
+    display: block;
+    padding-right: 24px;
+    padding-bottom: 72px;
+  }
+
+  .footer-container {
+  display: flex;
+  align-items: baseline; 
+  }
+  
 }
 
 @media screen and (min-width: 1158px) {
