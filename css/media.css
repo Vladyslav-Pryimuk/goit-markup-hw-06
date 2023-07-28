@@ -45,6 +45,17 @@
   align-items: baseline; 
   }
   
+  .footer-form {
+    display: flex;
+  }
+
+  .footer-text {
+    text-align: left;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -112,5 +123,16 @@
     background-color: var(--hero-color);
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .advantages-block {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

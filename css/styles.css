@@ -247,14 +247,15 @@ body {
 }
 
 .advantages-block {
-  width: 264px;
+  /* width: 264px;
   height: 112px;
   border-radius: 4px;
   background-color: var(--background-color);
   margin-bottom: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: none;
 }
 
 .advantages-icon {
