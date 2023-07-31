@@ -13,6 +13,26 @@
     max-width: 768px;
   }
 
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office2xtab.jpg);
+    }
+  }
+
   .advantages-item {
     width: calc((100% - 24px) / 2);
   }
@@ -34,17 +54,11 @@
     height: 88px;
   }
 
-  .footer-main-container {
-    display: block;
-    padding-right: 24px;
-    padding-bottom: 72px;
+  .footer-container {
+    display: flex;
+    align-items: baseline;
   }
 
-  .footer-container {
-  display: flex;
-  align-items: baseline; 
-  }
-  
   .footer-form {
     display: flex;
   }
@@ -56,11 +70,41 @@
   .footer-input {
     width: 264px;
   }
+
+  .footer-main-container {
+    display: block;
+  }
+
+  .social-media-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office1-2x.jpg);
+    }
   }
 
   .advantages {
