@@ -11,6 +11,10 @@
     gap: 56px;
     justify-content: center;
   }
+
+  .mob-socials-link {
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -36,6 +40,10 @@
         ),
         url(../images/people-office2xtab.jpg);
     }
+  }
+
+  .menu-open-btn {
+    display: none;
   }
 
   .advantages-item {
@@ -97,10 +105,6 @@
     gap: 40px;
   }
 
-  .header-list-item {
-    width: calc((100% - 40 * 2) / 3);
-  }
-
   .current {
     position: relative;
     color: var(--target-color);
@@ -140,22 +144,20 @@
     color: var(--target-color);
   }
 
-  .address-list-socials {
-    font-style: normal;
-  }
-
   .header-socials {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .header-socials-link {
     color: var(--address-color);
-    font-size: 16px;
+    font-size: 12px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    padding: 16px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -164,15 +166,26 @@
   .header-socials-link:focus {
     color: #404bbf;
   }
-
-  .address-list-socials {
-    margin-left: auto;
-  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-socials {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-list-item {
+    width: calc((100% - 40 * 2) / 3);
   }
 
   .hero {
@@ -285,5 +298,4 @@
     margin-right: 80px;
     display: block;
   }
-
 }
