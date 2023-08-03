@@ -85,6 +85,10 @@ body {
   align-items: center;
 }
 
+.header-list {
+  display: none;
+}
+
 .header-logo {
   color: var(--item-color);
   font-size: 18px;
@@ -93,21 +97,16 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
   padding: 24px 0;
   display: block;
 }
 
+.address-list-socials {
+  display: none;
+}
+
 .header-logo-accent {
   color: var(--accent-color);
-}
-
-.header-socials {
-  display: none;
-}
-
-.header-list {
-  display: none;
 }
 
 .header-container {
@@ -122,6 +121,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .mob-menu {
@@ -138,6 +138,7 @@ body {
   justify-content: space-between;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  overflow: auto;
 }
 
 .mob-menu.is-open {
@@ -235,6 +236,7 @@ body {
 
 .mob-list-icons {
   display: flex;
+  max-width: 328px;
   justify-content: space-between;
 }
 .mob-team-item {
@@ -258,6 +260,10 @@ body {
 .mob-team-link:focus {
   background-color: #31d0aa;
 }
+
+.studio-style {
+  color: var(--target-color);
+}
 /*----------HERO---------*/
 
 .hero {
@@ -265,8 +271,8 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -292,15 +298,14 @@ body {
 .hero-title {
   color: var(--hero-color);
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.12;
   letter-spacing: 0.02em;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 496px;
-  margin-bottom: 48px;
+  text-transform: capitalize;
+  padding-bottom: 72px;
 }
+
 .hero-btn {
   color: var(--hero-color);
   font-size: 16px;
@@ -509,14 +514,14 @@ body {
 .customers-list {
   flex-wrap: wrap;
   display: flex;
-  gap: 72px 24px;
+  gap: 72px 16px;
   align-items: center;
   justify-content: center;
 }
 
 .customers-item {
   height: 88px;
-  width: calc((100% - 24px) / 2);
+  width: calc((100% - 16px) / 2);
 }
 
 .customers-link {
@@ -616,7 +621,7 @@ body {
 }
 
 .header-logo-footer {
-  display: inline-block;
+  display: block;
   color: var(--item-color);
   text-align: center;
   font-size: 18px;
@@ -666,6 +671,7 @@ body {
 .footer-form {
   gap: 24px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer-subscribe {
@@ -860,7 +866,7 @@ body {
 }
 
 .modal {
-  width: 408px;
+  width: 100%;
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
