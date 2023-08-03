@@ -106,6 +106,10 @@ body {
   display: none;
 }
 
+.header-list {
+  display: none;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -172,8 +176,7 @@ body {
   background-color: var(--target-color);
   border: none;
 }
-.mob-menu-list {
-}
+
 .mob-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -183,14 +186,21 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  cursor: pointer;
   text-transform: capitalize;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mob-list-link:hover,
+.mob-list-link:focus {
+  color: var(--target-color);
+}
+
 .mob-list-socials {
   display: block;
   margin-bottom: 48px;
 }
-.mob-socials {
-}
+
 .mob-socials-item:not(:last-child) {
   margin-bottom: 40px;
 }

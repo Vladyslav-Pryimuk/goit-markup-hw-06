@@ -16,9 +16,6 @@
     font-size: 36px;
   }
 
-  .header-list {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -202,6 +199,14 @@
 
   .headr-socials-item:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .header-socials-link {
+    color: var(--slate, #434455);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .hero {
