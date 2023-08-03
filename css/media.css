@@ -15,6 +15,10 @@
   .mob-socials-link {
     font-size: 36px;
   }
+
+  .header-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -144,12 +148,6 @@
     color: var(--target-color);
   }
 
-  .header-socials {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .header-socials-link {
     color: var(--address-color);
     font-size: 12px;
@@ -158,8 +156,20 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
     padding: 16px 0;
-    display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-socials {
+    display: block;
+  }
+
+  .address-list-socials {
+    display: flex;
+    align-items: center;
+  }
+
+  .headr-socials-item:not(:last-child) {
+    margin-bottom: 12px;
   }
 
   .header-socials-link:hover,
@@ -173,19 +183,25 @@
     max-width: 1158px;
   }
 
+  .header-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .header-list-item {
+    width: calc((100% - 40 * 2) / 3);
+  }
+
   .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .header-socials {
-    display: flex;
-    gap: 40px;
-  }
-
-  .header-list-item {
-    width: calc((100% - 40 * 2) / 3);
+  .headr-socials-item:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .hero {

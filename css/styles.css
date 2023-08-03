@@ -102,12 +102,13 @@ body {
   color: var(--accent-color);
 }
 
-.header-list {
+.header-socials {
   display: none;
 }
 
-.header-socials {
-  display: none;
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-open-btn {
