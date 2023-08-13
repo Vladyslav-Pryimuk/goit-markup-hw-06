@@ -227,10 +227,6 @@
     gap: 40px;
   }
 
-  .header-list-item {
-    width: calc((100% - 40 * 2) / 3);
-  }
-
   .header-container {
     display: flex;
     align-items: center;
